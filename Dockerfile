@@ -2,7 +2,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
 WORKDIR /source
 
-COPY ./ SCASA-project .
+COPY ./ SCASA .
 RUN dotnet restore
 RUN dotnet publish -c release -o /app --no-restore
 
